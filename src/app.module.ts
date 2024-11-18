@@ -5,11 +5,16 @@ import { TypeOrmModule } from '@nestjs/typeorm/dist/typeorm.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmUserEntity } from './infrastructure/typeorm/typeormuserentity';
 import { TypeOrmStateEntity } from './infrastructure/typeorm/typeormstateentity';
+import { TypeOrmPhotoEntity } from './infrastructure/typeorm/typeormphotoentity';
+import { StateModule } from './infrastructure/nestjs/state.module';
+import { PhotoModule } from './infrastructure/nestjs/photos.module';
 
 
 @Module({
   imports: [
     UserModule,
+    StateModule,
+    PhotoModule,
     ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
       type: 'postgres',
@@ -18,7 +23,7 @@ import { TypeOrmStateEntity } from './infrastructure/typeorm/typeormstateentity'
       username: 'postgres.ffenhqwkmshxesotaasr',
       password: 'MasterKey2020**',
       database: 'postgres',
-      entities: [TypeOrmUserEntity,TypeOrmStateEntity],
+      entities: [TypeOrmUserEntity,TypeOrmStateEntity,TypeOrmPhotoEntity],
      
       })],
  

@@ -12,7 +12,7 @@ import { StateEdit } from 'src/aplication/state/stateedit/stateedit';
 import { StateGetPropertiesByUserId } from 'src/aplication/state/stategetuserid/stategetuserid'; 
 
 @Module({
-  imports: [TypeOrmModule.forFeature([TypeOrmStateEntity])],
+  imports: [TypeOrmModule.forFeature([TypeOrmStateEntity]),],
   controllers: [StateController],
   providers: [
     {

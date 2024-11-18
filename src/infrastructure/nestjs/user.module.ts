@@ -9,11 +9,10 @@ import { UserDelete } from 'src/aplication/user/userdelete/userdelete';
 import { UserEdit } from 'src/aplication/user/useredit/useredit';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { TypeOrmUserEntity } from '../typeorm/typeormuserentity';
-import { StateModule } from './state.module';
 
 
 @Module({
-  imports:[TypeOrmModule.forFeature([TypeOrmUserEntity]), StateModule],
+  imports:[TypeOrmModule.forFeature([TypeOrmUserEntity]),],
   controllers: [UserController],
 providers:[
 {
