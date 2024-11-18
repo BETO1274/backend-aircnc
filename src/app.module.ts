@@ -8,6 +8,8 @@ import { TypeOrmStateEntity } from './infrastructure/typeorm/typeormstateentity'
 import { TypeOrmPhotoEntity } from './infrastructure/typeorm/typeormphotoentity';
 import { StateModule } from './infrastructure/nestjs/state.module';
 import { PhotoModule } from './infrastructure/nestjs/photos.module';
+import { BookingModule } from './infrastructure/nestjs/booking.module';
+import { TypeOrmBookingEntity } from './infrastructure/typeorm/typeorm_booking_entity';
 
 
 @Module({
@@ -15,6 +17,7 @@ import { PhotoModule } from './infrastructure/nestjs/photos.module';
     UserModule,
     StateModule,
     PhotoModule,
+    BookingModule,
     ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
       type: 'postgres',
@@ -23,7 +26,7 @@ import { PhotoModule } from './infrastructure/nestjs/photos.module';
       username: 'postgres.ffenhqwkmshxesotaasr',
       password: 'MasterKey2020**',
       database: 'postgres',
-      entities: [TypeOrmUserEntity,TypeOrmStateEntity,TypeOrmPhotoEntity],
+      entities: [TypeOrmUserEntity,TypeOrmStateEntity,TypeOrmPhotoEntity,TypeOrmBookingEntity],
      
       })],
  

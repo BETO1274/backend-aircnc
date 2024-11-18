@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Photo } from "src/domain/photos/photo.domain"; 
 import { PhotoId } from "src/domain/photos/photo_id.vo";
-import { ListingId } from "src/domain/state/state_listing_id.vo";
+import { ListingId } from "src/domain/photos/photo_listing_id.vo"; 
 import { PhotoUrl } from "src/domain/photos/photo_url.vo";
 import { PhotoCreatedAt } from "src/domain/photos/photo_created_at.vo";
 import { PhotoRepository } from "src/domain/photos/photo_repository";

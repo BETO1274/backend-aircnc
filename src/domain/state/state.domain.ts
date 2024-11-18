@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { ListingId } from "./state_listing_id.vo";
-import { UserId } from "../user/user_id.vo";
+import { UserId } from "./state_user_id.vo";
 import { Title } from "./state_title.vo";
 import { Description } from "./state_description.vo";
 import { Address } from "./state_address.vo";

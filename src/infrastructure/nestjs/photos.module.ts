@@ -10,8 +10,9 @@ import { PhotoGetOneById } from "src/aplication/photos/PhotoGetOneById/PhotoGetO
 import { PhotoGetByListingId } from "src/aplication/photos/PhotoGetByListingId/PhotoGetByListingId";
 import { PhotoEdit } from "src/aplication/photos/PhotoEdit/PhotoEdit";
 import { PhotoDelete } from "src/aplication/photos/PhotoDelete/PhotoDelete"; 
+import { BookingModule } from './booking.module';
 @Module({
-  imports: [TypeOrmModule.forFeature([TypeOrmPhotoEntity])],
+  imports: [TypeOrmModule.forFeature([TypeOrmPhotoEntity]), BookingModule],
   controllers: [PhotosController],
   providers: [
     {

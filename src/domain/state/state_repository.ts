@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { State } from "./state.domain";
 import { ListingId } from "./state_listing_id.vo";
-import { UserId } from "../user/user_id.vo"; 
+import { UserId } from "./state_user_id.vo";
 
 export interface StateRepository {
 

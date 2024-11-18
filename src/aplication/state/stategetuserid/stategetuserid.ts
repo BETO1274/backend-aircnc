@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { State } from "../../../domain/state/state.domain";
-import { UserId } from "src/domain/user/user_id.vo"; 
+import { UserId } from "src/domain/state/state_user_id.vo";
 import { StateRepository } from "src/domain/state/state_repository"; 
 
 export class StateGetPropertiesByUserId {

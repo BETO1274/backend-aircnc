@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { Photo } from "src/domain/photos/photo.domain"; 
-import { ListingId } from "src/domain/state/state_listing_id.vo";
+import { ListingId } from "src/domain/photos/photo_listing_id.vo"; 
 import { PhotoRepository } from "src/domain/photos/photo_repository"; 
 export class PhotoGetByListingId {
   constructor(private repository: PhotoRepository) {}

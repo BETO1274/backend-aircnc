@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { State } from "../../../domain/state/state.domain";
 import { ListingId } from "../../../domain/state/state_listing_id.vo";
-import { UserId } from "../../../domain/user/user_id.vo";
+import { UserId } from "src/domain/state/state_user_id.vo"; 
 import { Title } from "../../../domain/state/state_title.vo";
 import { Description } from "../../../domain/state/state_description.vo";
 import { Address } from "../../../domain/state/state_address.vo";

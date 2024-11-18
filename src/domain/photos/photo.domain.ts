@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { PhotoId } from "./photo_id.vo";
-import { ListingId } from "../state/state_listing_id.vo"; 
+import { ListingId } from "./photo_listing_id.vo"; 
 import { PhotoUrl } from "./photo_url.vo";
 import { PhotoCreatedAt } from "./photo_created_at.vo";
 
