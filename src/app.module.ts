@@ -4,6 +4,7 @@ import { UserModule } from './infrastructure/nestjs/user.module';
 import { TypeOrmModule } from '@nestjs/typeorm/dist/typeorm.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmUserEntity } from './infrastructure/typeorm/typeormuserentity';
+import { TypeOrmStateEntity } from './infrastructure/typeorm/typeormstateentity';
 
 
 @Module({
@@ -17,7 +18,7 @@ import { TypeOrmUserEntity } from './infrastructure/typeorm/typeormuserentity';
       username: 'postgres.ffenhqwkmshxesotaasr',
       password: 'MasterKey2020**',
       database: 'postgres',
-      entities: [TypeOrmUserEntity],
+      entities: [TypeOrmUserEntity,TypeOrmStateEntity],
      
       })],
  

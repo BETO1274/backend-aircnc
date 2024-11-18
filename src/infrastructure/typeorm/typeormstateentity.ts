@@ -19,11 +19,11 @@ export class TypeOrmStateEntity {
   @Column()
   address: string;
 
-  @Column("float")
-  latitude: number;
+  @Column()
+  latitude: string;
 
-  @Column("float")
-  longitude: number;
+  @Column()
+  longitude: string;
 
   @Column("float")
   price_per_night: number;
