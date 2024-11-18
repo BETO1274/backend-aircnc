@@ -1,12 +1,12 @@
 /* eslint-disable prettier/prettier */
 import { Body, Controller, Delete, Get, Inject, NotFoundException, Param, Post, Put } from '@nestjs/common';
-  import { PhotoCreate } from "src/aplication/photos/PhotoCreate/PhotoCreate"; 
+  import { PhotoCreate } from 'src/aplication/photos/PhotoCreate/PhotoCreate';
   import { PhotoGetAll } from "src/aplication/photos/PhotoGetAll/PhotoGetAll"; 
   import { PhotoGetOneById } from "src/aplication/photos/PhotoGetOneById/PhotoGetOneById";
   import { PhotoGetByListingId } from "src/aplication/photos/PhotoGetByListingId/PhotoGetByListingId"; 
   import { PhotoEdit } from "src/aplication/photos/PhotoEdit/PhotoEdit";
   import { PhotoDelete } from "src/aplication/photos/PhotoDelete/PhotoDelete"; 
-  import { Edit, FindOneByListing, FindOneParams, Save } from "./photovalidations"; 
+  import { Edit, FindOneByListing, FindOneParams, Save } from './photovalidations'; 
 import { PhotoNotFoundError } from "src/domain/photos/photonotfounderror";
   
   @Controller("photos")

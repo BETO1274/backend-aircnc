@@ -1,14 +1,14 @@
 /* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
-import { UserModule } from './infrastructure/nestjs/user.module';
+import { UserModule } from './infrastructure/nestjs/user/user.module';
 import { TypeOrmModule } from '@nestjs/typeorm/dist/typeorm.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmUserEntity } from './infrastructure/typeorm/typeormuserentity';
 import { TypeOrmStateEntity } from './infrastructure/typeorm/typeormstateentity';
 import { TypeOrmPhotoEntity } from './infrastructure/typeorm/typeormphotoentity';
-import { StateModule } from './infrastructure/nestjs/state.module';
-import { PhotoModule } from './infrastructure/nestjs/photos.module';
-import { BookingModule } from './infrastructure/nestjs/booking.module';
+import { StateModule } from './infrastructure/nestjs/state/state.module'; 
+import { PhotoModule } from './infrastructure/nestjs/photos/photos.module';
+import { BookingModule } from './infrastructure/nestjs/booking/booking.module';
 import { TypeOrmBookingEntity } from './infrastructure/typeorm/typeorm_booking_entity';
 
 

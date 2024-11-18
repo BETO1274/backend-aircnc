@@ -1,9 +1,9 @@
 /* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { TypeOrmStateEntity } from '../typeorm/typeormstateentity';
+import { TypeOrmStateEntity } from 'src/infrastructure/typeorm/typeormstateentity';
 import { StateController } from './state.controller'; 
-import { TypeOrmStateRepository } from '../typeorm/typeormstaterepository'; 
+import { TypeOrmStateRepository } from 'src/infrastructure/typeorm/typeormstaterepository'; 
 import { StateGetAll } from 'src/aplication/state/stategetall/stategetall';
 import { StateGetOneById } from 'src/aplication/state/stategetonebyid/stategetonebyid';
 import { StateCreate } from 'src/aplication/state/statecreate/statecreate';

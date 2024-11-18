@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { BookingController } from './booking.controller';
-import { TypeOrmBookingRepository } from '../typeorm/typeormbookingrepository';
+import { TypeOrmBookingRepository } from '../../typeorm/typeormbookingrepository';
 import { BookingGetAll } from 'src/aplication/booking/bookinggetall/bookinggetall';
 import { BookingGetOneById } from 'src/aplication/booking/bookinggetonebyid/bookinggetonebyid';
 import { BookingCreate } from 'src/aplication/booking/bookingcreate/bookingcreate';
@@ -9,7 +9,7 @@ import { BookingEdit } from 'src/aplication/booking/bookingedit/bookingedit';
 import { BookingDelete } from 'src/aplication/booking/bookingdelete/bookingdelete';
 import { BookingGetByUserId } from 'src/aplication/booking/bookinggetbyuserid/bookinggetbyuserid';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { TypeOrmBookingEntity } from '../typeorm/typeorm_booking_entity'; 
+import { TypeOrmBookingEntity } from '../../typeorm/typeorm_booking_entity'; 
 
 @Module({
   imports: [TypeOrmModule.forFeature([TypeOrmBookingEntity])],

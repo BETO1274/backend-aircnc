@@ -2,15 +2,15 @@
 import { Module } from "@nestjs/common";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { PhotosController } from "./photos.controller"; 
-import { TypeOrmPhotoEntity } from "../typeorm/typeormphotoentity"; 
-import { TypeOrmPhotoRepository } from "../typeorm/typeormphotorepository"; 
+import { TypeOrmPhotoEntity } from "../../typeorm/typeormphotoentity"; 
+import { TypeOrmPhotoRepository } from "../../typeorm/typeormphotorepository"; 
 import { PhotoCreate } from "src/aplication/photos/PhotoCreate/PhotoCreate"; 
 import { PhotoGetAll } from "src/aplication/photos/PhotoGetAll/PhotoGetAll"; 
 import { PhotoGetOneById } from "src/aplication/photos/PhotoGetOneById/PhotoGetOneById"; 
 import { PhotoGetByListingId } from "src/aplication/photos/PhotoGetByListingId/PhotoGetByListingId";
 import { PhotoEdit } from "src/aplication/photos/PhotoEdit/PhotoEdit";
 import { PhotoDelete } from "src/aplication/photos/PhotoDelete/PhotoDelete"; 
-import { BookingModule } from './booking.module';
+import { BookingModule } from '../booking/booking.module';
 @Module({
   imports: [TypeOrmModule.forFeature([TypeOrmPhotoEntity]), BookingModule],
   controllers: [PhotosController],

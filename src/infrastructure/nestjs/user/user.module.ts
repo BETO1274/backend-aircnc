@@ -1,14 +1,14 @@
 /* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { UserController } from './user.controller';
-import { TypeOrmUserRepository } from '../typeorm/typeormuserrepository';
+import { TypeOrmUserRepository } from '../../typeorm/typeormuserrepository';
 import { UserGetAll } from 'src/aplication/user/usergetall/usergetall';
 import { UserGetOneById } from 'src/aplication/user/usergetonebyid/usergetonebyid';
 import { UserCreate } from 'src/aplication/user/usercreate/usercreate';
 import { UserDelete } from 'src/aplication/user/userdelete/userdelete';
 import { UserEdit } from 'src/aplication/user/useredit/useredit';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { TypeOrmUserEntity } from '../typeorm/typeormuserentity';
+import { TypeOrmUserEntity } from '../../typeorm/typeormuserentity';
 
 
 @Module({
