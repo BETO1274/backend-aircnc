@@ -12,6 +12,10 @@ import { BookingModule } from './infrastructure/nestjs/booking/booking.module';
 import { TypeOrmBookingEntity } from './infrastructure/typeorm/typeorm_booking_entity';
 import { ReviewModule } from './infrastructure/nestjs/review/review.module';
 import { TypeOrmReviewEntity } from './infrastructure/typeorm/typeorm-review.entity';
+import { ItemsController } from './items/items.controller';
+import { ItemsService } from './items/items.service';
+import { Item } from './items/item.entity';
+import { ItemsModule } from './items/items.module';
 
 
 
@@ -30,9 +34,13 @@ import { TypeOrmReviewEntity } from './infrastructure/typeorm/typeorm-review.ent
       username: 'postgres.ffenhqwkmshxesotaasr',
       password: 'MasterKey2020**',
       database: 'postgres',
-      entities: [TypeOrmUserEntity,TypeOrmStateEntity,TypeOrmPhotoEntity,TypeOrmBookingEntity,TypeOrmReviewEntity],
-     
-      })],
+      entities: [TypeOrmUserEntity,TypeOrmStateEntity,TypeOrmPhotoEntity,TypeOrmBookingEntity,TypeOrmReviewEntity,Item],
+      
+      }),
+      ItemsModule,
+    ],
+      controllers:[ItemsController],
+      providers:[ItemsService]
  
 })
 export class AppModule { }
